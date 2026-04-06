@@ -3,20 +3,22 @@ import { motion } from 'motion/react';
 
 const experiences = [
   {
+    role: 'Designer Gráfico',
+    company: 'Adlocal',
+    description: 'Produção gráfica • Direção de arte • Landing Pages • Identidade visual • Desenvolvimento e produção de Websites • Identidade visual & branding'
+  },
+  {
     role: 'Analista de Marketing digital',
-    period: 'fev de 2023 - mar de 2024',
     company: 'Masi Laboratório',
     description: 'Produção gráfica • Direção de arte • Gestão de Redes Sociais • Edição de vídeo • Materiais On e Off • Infográficos e Apresentações • Comunicação interna • Produção de conteúdo • E-mail Marketing • Manutenção de Website • Apresentações Institucionais'
   },
   {
     role: 'Web Designer Gráfico',
-    period: 'jul de 2022 - mar de 2023',
     company: 'Mark',
     description: 'Produção gráfica • Direção de arte • Landing Pages • Identidade visual • Desenvolvimento e produção de Websites • Artes • Marketing • Adobe Illustrator • Adobe Premiere Pro'
   },
   {
     role: 'Analista de Marketing Digital',
-    period: 'mai de 2021 - jul de 2022',
     company: 'Decision IT',
     description: 'Produção gráfica • Direção de arte • Edição de vídeo • E-mail Marketing • Materiais On e Off • Infográficos e Apresentações • Comunicação interna • Organização de Eventos • Produção de conteúdo • Gestão de Redes Sociais'
   }
