@@ -62,7 +62,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
 
             <div className="pt-8 border-t border-zinc-900">
-              <p className="text-2xl font-medium">© 2025</p>
+              <p className="text-2xl font-medium">© 2026</p>
             </div>
 
             <button 
