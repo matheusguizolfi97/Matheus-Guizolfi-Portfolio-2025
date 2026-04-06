@@ -33,7 +33,7 @@ export default function Info() {
       <div className="flex flex-col xl:flex-row gap-12 items-start">
         <div className="w-full xl:w-1/2 aspect-[4/3] overflow-hidden rounded-xl bg-zinc-900">
           <img 
-            src="/assets/profile.jpg" 
+            src="/assets/profile.png" 
             alt="Matheus Guizolfi"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
