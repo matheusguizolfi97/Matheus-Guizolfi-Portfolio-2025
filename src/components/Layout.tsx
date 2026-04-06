@@ -30,7 +30,7 @@ export default function Layout({ children }: LayoutProps) {
                 Transformo ideias em experiências visuais marcantes.
               </p>
               <p>
-                Com 5 anos de experiência em Design Gráfico, Branding e Web Design, crio com propósito, curiosidade e atenção aos detalhes. Entre a lógica e a criatividade, desenvolvo soluções visuais que comunicam com clareza e surpreendem.
+                Com 6 anos de experiência em Design Gráfico, Branding e Web Design, crio com propósito, curiosidade e atenção aos detalhes. Entre a lógica e a criatividade, desenvolvo soluções visuais que comunicam com clareza e surpreendem.
               </p>
             </div>
 
