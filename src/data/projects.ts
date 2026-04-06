@@ -44,8 +44,8 @@ export const projects: ProjectData[] = [
     title: 'Cristiane Lucas Podóloga',
     year: '2025',
     type: 'images',
-    heroImage: '/assets/projects/content/projeto-2/cover.png',
-    thumbnail: '/assets/projects/thumbnails/projeto-02.png',
+    heroImage: 'assets/projects/content/projeto-2/cover.png',
+    thumbnail: 'assets/projects/thumbnails/projeto-02.png',
     description: [
       'Este projeto de identidade visual foi desenvolvido para Cristiane Lucas, podóloga especializada em cuidados com a saúde e bem-estar dos pés. A proposta busca alinhar a marca pessoal da profissional com uma comunicação visual que transmita confiança, acolhimento e excelência técnica.',
       'A paleta de cores suaves, a tipografia limpa e os elementos gráficos delicados foram escolhidos para criar uma atmosfera serena e acessível, refletindo a experiência acolhedora que a profissional oferece em seu atendimento.'
