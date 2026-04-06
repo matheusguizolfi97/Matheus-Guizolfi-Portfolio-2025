@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { motion } from 'motion/react';
-import { Home as HomeIcon, ArrowLeft, ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Home as HomeIcon, ArrowLeft, ArrowRight, X } from 'lucide-react';
 import { projects } from '../data/projects';
 import ScrollBox from '../components/ScrollBox';
 
 export default function Project() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const projectIndex = projects.findIndex(p => p.id === id);
   const project = projects[projectIndex];
@@ -34,13 +35,47 @@ export default function Project() {
       key={id}
       className="pb-32"
     >
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
+          >
+            <motion.button
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors p-2"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X size={32} />
+            </motion.button>
+            <motion.img
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              src={selectedImage}
+              alt="Project detail"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Hero Image */}
-      <div className="aspect-[16/7] w-full overflow-hidden rounded-xl bg-zinc-900 mb-12">
+      <div 
+        className="aspect-[16/7] w-full overflow-hidden rounded-xl bg-zinc-900 mb-12 cursor-zoom-in"
+        onClick={() => setSelectedImage(project.heroImage)}
+      >
         <img 
           src={project.heroImage} 
           alt={`${project.title} Hero`}
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-700"
         />
       </div>
 
@@ -76,7 +111,8 @@ export default function Project() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="aspect-[4/3] overflow-hidden rounded-lg bg-zinc-900"
+              className="aspect-[4/3] overflow-hidden rounded-lg bg-zinc-900 cursor-zoom-in"
+              onClick={() => setSelectedImage(asset)}
             >
               <img 
                 src={asset} 
