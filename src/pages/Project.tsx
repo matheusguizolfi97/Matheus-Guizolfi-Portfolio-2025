@@ -107,20 +107,17 @@ export default function Project() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
           {project.assets.map((asset, i) => (
             <motion.div 
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="aspect-[5/4] overflow-hidden rounded-lg bg-zinc-900 cursor-zoom-in"
-              onClick={() => setSelectedImage(asset)}
-            >
-              <img 
-                src={asset} 
-                alt={`${project.title} asset ${i + 1}`}
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </motion.div>
+  key={i}
+  // ... outras props
+  className={`${project.type === 'website' ? 'aspect-video' : ''} overflow-hidden rounded-lg bg-zinc-900 cursor-zoom-in`}
+  onClick={() => setSelectedImage(asset)}
+>
+  <img 
+    src={asset} 
+    // ... outras props
+    className={`w-full ${project.type === 'website' ? 'h-full object-cover' : 'h-auto'} hover:scale-105 transition-transform duration-700`}
+  />
+</motion.div>
           ))}
         </div>
       )}
