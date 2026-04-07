@@ -35,7 +35,7 @@ export default function Info() {
       <div className="flex flex-col xl:flex-row gap-12 items-start">
         <div className="w-full xl:w-1/2 aspect-[4/3] overflow-hidden rounded-xl bg-zinc-900">
           <img 
-            src="/assets/profile.png" 
+            src="/assets/profile.jpg" 
             alt="Matheus Guizolfi"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
@@ -57,7 +57,6 @@ export default function Info() {
           <div key={index} className="grid grid-cols-1 md:grid-cols-12 gap-6 pt-12 border-t border-zinc-900 group">
             <div className="md:col-span-4 space-y-1">
               <h3 className="text-lg font-medium group-hover:text-zinc-300 transition-colors">{exp.role}</h3>
-              <p className="text-sm text-zinc-500">{exp.period}</p>
             </div>
             <div className="md:col-span-3">
               <p className="text-lg font-medium">{exp.company}</p>

@@ -40,6 +40,66 @@ export const projects: ProjectData[] = [
     ]
   },
   {
+    id: 'buddyvet',
+    title: 'BuddyVet',
+    year: '2025',
+    type: 'both',
+    heroImage: '/assets/projects/content/projeto-11/cover.png',
+    thumbnail: '/assets/projects/thumbnails/projeto-11.png',
+    websiteImage: '/assets/projects/content/projeto-11/1.png',
+    description: [
+      'Projeto de web design desenvolvido para a BuddyVet, uma clínica veterinária ficticia focada em cuidado humanizado, prevenção e bem-estar animal. A proposta visual prioriza clareza, proximidade e confiança, criando uma experiência digital acolhedora e funcional para tutores e pets. O resultado é uma presença moderna, acessível e alinhada ao posicionamento da marca.'
+    ],
+    assets: [
+      '/assets/projects/content/projeto-11/2.png',
+      '/assets/projects/content/projeto-11/3.png',
+      '/assets/projects/content/projeto-11/4.png',
+      '/assets/projects/content/projeto-11/5.png',
+      '/assets/projects/content/projeto-11/6.png',
+    ]
+  },
+  {
+    id: 'adlocal',
+    title: 'Adlocal',
+    year: '2025',
+    type: 'website',
+    heroImage: '/assets/projects/content/projeto-12/cover.png',
+    thumbnail: '/assets/projects/thumbnails/projeto-12.png',
+    websiteImage: '/assets/projects/content/projeto-12/1.png',
+    description: [
+      'Web design desenvolvido para a Adlocal, uma agência de marketing digital orientada a estratégia, performance e resultados. O projeto aposta em uma linguagem visual moderna, impactante e persuasiva, com hierarquia clara e CTAs estratégicas. O resultado é uma presença digital forte, pensada para comunicar autoridade e gerar conversões.'
+    ]
+  },
+  {
+    id: 'hertz',
+    title: 'Hertz',
+    year: '2025',
+    type: 'images',
+    heroImage: '/assets/projects/content/projeto-13/cover.png',
+    thumbnail: '/assets/projects/thumbnails/projeto-13.png',
+    description: [
+      'Teste de design gráfico e social media desenvolvido para a Hertz, com foco em fortalecer a presença digital da marca e aumentar o engajamento. As peças exploram tipografia marcante, cores vibrantes e composições dinâmicas, mantendo consistência visual e clareza na comunicação. O resultado é uma linguagem visual forte e alinhada ao posicionamento global da marca.'
+    ],
+    assets: [
+      '/assets/projects/content/projeto-13/1.png',
+      '/assets/projects/content/projeto-13/2.png',
+      '/assets/projects/content/projeto-13/3.png',
+      '/assets/projects/content/projeto-13/4.png',
+    ]
+  },
+  {
+    id: 'zenturotech',
+    title: 'ZenturoTech',
+    year: '2025',
+    type: 'website',
+    heroImage: '/assets/projects/content/projeto-14/cover.png',
+    thumbnail: '/assets/projects/thumbnails/projeto-14.png',
+    websiteImage: '/assets/projects/content/projeto-14/1.png',
+    description: [
+      'Web design desenvolvido para a ZenturoTech, com foco em tecnologia, inovação e performance. A proposta visual aposta em layouts limpos, estrutura clara e elementos contemporâneos, transmitindo credibilidade e eficiência. O projeto resulta em uma experiência digital moderna, funcional e alinhada ao universo tech da marca.'
+    ]
+  },
+  {
     id: 'cristiane-lucas',
     title: 'Cristiane Lucas Podóloga',
     year: '2025',
@@ -71,19 +131,6 @@ export const projects: ProjectData[] = [
     ]
   },
   {
-    id: 'evlos',
-    title: 'Evlos',
-    year: '2022',
-    type: 'website',
-    heroImage: '/assets/projects/content/projeto-4/cover.png',
-    thumbnail: '/assets/projects/thumbnails/projeto-04.png',
-    websiteImage: '/assets/projects/content/projeto-4/1.jpg',
-    description: [
-      'A Evlos é uma plataforma B2B que conecta tecnologia e inteligência de mercado para transformar a experiência financeira. A landing page foi criada para traduzir essa proposta com um design direto, moderno e funcional.',
-      'Cada elemento foi pensado para reforçar a credibilidade da marca e destacar seu papel como parceira estratégica no ecossistema financeiro, unindo soluções e pessoas para criar novas possibilidades na nova economia.'
-    ]
-  },
-  {
     id: 'studio-yoda',
     title: 'Studio Yoda',
     year: '2022',
@@ -94,6 +141,19 @@ export const projects: ProjectData[] = [
     description: [
       'O Studio Yoda é um estúdio de animação 3D que transforma ideias em experiências visuais memoráveis. O projeto do website foi desenvolvido para refletir essa essência criativa, destacando o portfólio com dinamismo, leveza e identidade.',
       'Com uma navegação fluida e foco nas imagens, o site convida o visitante a explorar cada projeto como quem assiste a uma boa história. A estrutura valoriza o impacto visual e reforça a missão do estúdio: emocionar, comunicar e agregar valor por meio da animação.'
+    ]
+  },
+  {
+    id: 'evlos',
+    title: 'Evlos',
+    year: '2022',
+    type: 'website',
+    heroImage: '/assets/projects/content/projeto-4/cover.png',
+    thumbnail: '/assets/projects/thumbnails/projeto-04.png',
+    websiteImage: '/assets/projects/content/projeto-4/1.jpg',
+    description: [
+      'A Evlos é uma plataforma B2B que conecta tecnologia e inteligência de mercado para transformar a experiência financeira. A landing page foi criada para traduzir essa proposta com um design direto, moderno e funcional.',
+      'Cada elemento foi pensado para reforçar a credibilidade da marca e destacar seu papel como parceira estratégica no ecossistema financeiro, unindo soluções e pessoas para criar novas possibilidades na nova economia.'
     ]
   },
   {

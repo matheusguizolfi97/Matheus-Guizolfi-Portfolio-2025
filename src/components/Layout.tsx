@@ -62,12 +62,12 @@ export default function Layout({ children }: LayoutProps) {
             </div>
 
             <div className="pt-8 border-t border-zinc-900">
-              <p className="text-2xl font-medium">© 2026</p>
+              <p className="text-2xl font-medium">© 2025</p>
             </div>
 
             <button 
               onClick={scrollToTop}
-              className="w-12 h-12 flex items-center justify-center bg-white text-black rounded-md hover:bg-zinc-200 transition-colors"
+              className="fixed bottom-8 right-8 lg:relative lg:bottom-0 lg:right-0 w-12 h-12 flex items-center justify-center bg-white text-black rounded-md hover:bg-zinc-200 transition-colors z-[60]"
               aria-label="Scroll to top"
             >
               <ArrowUp size={24} strokeWidth={3} />

@@ -13,7 +13,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
         >
-          <Link to={`/project/${project.id}`} className="group block relative aspect-[4/3] overflow-hidden rounded-lg bg-zinc-900">
+          <Link to={`/project/${project.id}`} className="group block relative aspect-video overflow-hidden rounded-lg bg-zinc-900">
             <img 
               src={project.thumbnail} 
               alt={project.title}
