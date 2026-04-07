@@ -111,7 +111,7 @@ export default function Project() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="aspect-video overflow-hidden rounded-lg bg-zinc-900 cursor-zoom-in"
+              className="aspect-[4/5] overflow-hidden rounded-lg bg-zinc-900 cursor-zoom-in"
               onClick={() => setSelectedImage(asset)}
             >
               <img 
