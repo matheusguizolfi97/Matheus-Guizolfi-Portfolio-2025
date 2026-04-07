@@ -18,7 +18,7 @@ export default function Home() {
               src={project.thumbnail} 
               alt={project.title}
               referrerPolicy="no-referrer"
-              className="w-full h-full object-cover opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
+              className="w-full h-full object-cover opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
             
