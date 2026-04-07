@@ -9,7 +9,7 @@ export default function Home() {
       {projects.map((project, index) => (
         <motion.div
           key={project.id}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
         >
